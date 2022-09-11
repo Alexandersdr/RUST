@@ -1,4 +1,6 @@
 
+
+
 use std::io;
 fn main() {
     println!("Advinhe o número");
