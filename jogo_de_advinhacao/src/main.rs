@@ -1,16 +1,18 @@
-
-
-
 use std::io;
-fn main() {
-    println!("Advinhe o número");
+fn main(){
+    println!("Guess the number!");
 
-    println!("Digite seu palpite");
+    println!("Please input your guess.");
 
-    let mut palpite = String::new();
+    let mut guess = String::new();
 
-    io::stdin().read_line(&mut palpite)
-        .expect("Falha ao ler entrada");
+    io::stdin()
+        .read_line(&mut guess)
+        .expect("Failed to read line");
 
-        println!("Você disse:{}", palpite);
+    println!("You guessed: {guess}");
 }
+
+
+/*$ cargo build
+  $ cargo run*/
